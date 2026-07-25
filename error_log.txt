@@ -1,49 +1,50 @@
-build	Build Docker image	﻿2026-07-25T04:48:36.5317159Z ##[group]Run docker build -t my-python-app:latest .
-build	Build Docker image	2026-07-25T04:48:36.5317650Z ^[[36;1mdocker build -t my-python-app:latest .^[[0m
-build	Build Docker image	2026-07-25T04:48:36.5367566Z shell: /usr/bin/bash -e {0}
-build	Build Docker image	2026-07-25T04:48:36.5367884Z ##[endgroup]
-build	Build Docker image	2026-07-25T04:48:36.8897580Z #0 building with "default" instance using docker driver
-build	Build Docker image	2026-07-25T04:48:36.8898296Z 
-build	Build Docker image	2026-07-25T04:48:36.8898505Z #1 [internal] load build definition from Dockerfile
-build	Build Docker image	2026-07-25T04:48:36.8899046Z #1 transferring dockerfile: 113B 0.0s done
-build	Build Docker image	2026-07-25T04:48:36.8899497Z #1 DONE 0.0s
-build	Build Docker image	2026-07-25T04:48:36.8899676Z 
-build	Build Docker image	2026-07-25T04:48:36.8899919Z #2 [auth] library/python:pull token for registry-1.docker.io
-build	Build Docker image	2026-07-25T04:48:36.8900448Z #2 DONE 0.0s
-build	Build Docker image	2026-07-25T04:48:36.8900622Z 
-build	Build Docker image	2026-07-25T04:48:36.8900896Z #3 [internal] load metadata for docker.io/library/python:3.12-slim
-build	Build Docker image	2026-07-25T04:48:37.0305485Z #3 DONE 0.3s
-build	Build Docker image	2026-07-25T04:48:37.0952279Z 
-build	Build Docker image	2026-07-25T04:48:37.0953057Z #4 [internal] load .dockerignore
-build	Build Docker image	2026-07-25T04:48:37.0953672Z #4 transferring context: 2B done
-build	Build Docker image	2026-07-25T04:48:37.0954249Z #4 DONE 0.0s
-build	Build Docker image	2026-07-25T04:48:37.0954472Z 
-build	Build Docker image	2026-07-25T04:48:37.0954660Z #5 [internal] load build context
-build	Build Docker image	2026-07-25T04:48:37.0955430Z #5 transferring context: 2B done
-build	Build Docker image	2026-07-25T04:48:37.0955921Z #5 DONE 0.0s
-build	Build Docker image	2026-07-25T04:48:37.0956135Z 
-build	Build Docker image	2026-07-25T04:48:37.0956299Z #6 [2/3] WORKDIR /app
-build	Build Docker image	2026-07-25T04:48:37.0956692Z #6 CACHED
-build	Build Docker image	2026-07-25T04:48:37.0956919Z 
-build	Build Docker image	2026-07-25T04:48:37.0957090Z #7 [3/3] COPY app.py .
-build	Build Docker image	2026-07-25T04:48:37.0958196Z #7 ERROR: failed to calculate checksum of ref dce1e4a9-fc26-4218-aaf0-feee5194c8cb::73bi1wq9a5ezq2zccanzx1hkj: "/app.py": not found
-build	Build Docker image	2026-07-25T04:48:37.0959294Z 
-build	Build Docker image	2026-07-25T04:48:37.0959952Z #8 [1/3] FROM docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de
-build	Build Docker image	2026-07-25T04:48:37.0961431Z #8 resolve docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de done
-build	Build Docker image	2026-07-25T04:48:37.0962525Z #8 sha256:cab2dbf575e971934a81e4622f5aba17aa7929719bd7e31033a3a83b97fd0464 1.75kB / 1.75kB done
-build	Build Docker image	2026-07-25T04:48:37.0963342Z #8 sha256:25c5b8011a3425a140bf5fa73be0feabd3c0d5b323eecb19dc02437a368ae075 5.66kB / 5.66kB done
-build	Build Docker image	2026-07-25T04:48:37.0964157Z #8 sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de 10.37kB / 10.37kB done
-build	Build Docker image	2026-07-25T04:48:37.0964700Z #8 CANCELED
-build	Build Docker image	2026-07-25T04:48:37.0964907Z ------
-build	Build Docker image	2026-07-25T04:48:37.0967247Z  > [3/3] COPY app.py .:
-build	Build Docker image	2026-07-25T04:48:37.0967614Z ------
-build	Build Docker image	2026-07-25T04:48:37.1048959Z Dockerfile:5
-build	Build Docker image	2026-07-25T04:48:37.1049686Z --------------------
-build	Build Docker image	2026-07-25T04:48:37.1050070Z    3 |     WORKDIR /app
-build	Build Docker image	2026-07-25T04:48:37.1050440Z    4 |     
-build	Build Docker image	2026-07-25T04:48:37.1050824Z    5 | >>> COPY app.py .
-build	Build Docker image	2026-07-25T04:48:37.1051246Z    6 |     
-build	Build Docker image	2026-07-25T04:48:37.1051615Z    7 |     CMD ["python", "app.py"]
-build	Build Docker image	2026-07-25T04:48:37.1052124Z --------------------
-build	Build Docker image	2026-07-25T04:48:37.1053653Z ERROR: failed to build: failed to solve: failed to compute cache key: failed to calculate checksum of ref dce1e4a9-fc26-4218-aaf0-feee5194c8cb::73bi1wq9a5ezq2zccanzx1hkj: "/app.py": not found
-build	Build Docker image	2026-07-25T04:48:37.1106231Z ##[error]Process completed with exit code 1.
+build	Build Docker image	﻿2026-07-25T05:13:03.4055394Z ##[group]Run docker build -t my-python-app:latest .
+build	Build Docker image	2026-07-25T05:13:03.4055858Z ^[[36;1mdocker build -t my-python-app:latest .^[[0m
+build	Build Docker image	2026-07-25T05:13:03.4103479Z shell: /usr/bin/bash -e {0}
+build	Build Docker image	2026-07-25T05:13:03.4103752Z ##[endgroup]
+build	Build Docker image	2026-07-25T05:13:03.8197569Z #0 building with "default" instance using docker driver
+build	Build Docker image	2026-07-25T05:13:03.8198468Z 
+build	Build Docker image	2026-07-25T05:13:03.8198765Z #1 [internal] load build definition from Dockerfile
+build	Build Docker image	2026-07-25T05:13:03.8199267Z #1 transferring dockerfile: 117B 0.0s done
+build	Build Docker image	2026-07-25T05:13:03.8199615Z #1 DONE 0.0s
+build	Build Docker image	2026-07-25T05:13:03.8199756Z 
+build	Build Docker image	2026-07-25T05:13:03.8199976Z #2 [internal] load metadata for docker.io/library/python:3.12-slim
+build	Build Docker image	2026-07-25T05:13:04.0343993Z #2 ...
+build	Build Docker image	2026-07-25T05:13:04.0344231Z 
+build	Build Docker image	2026-07-25T05:13:04.0344488Z #3 [auth] library/python:pull token for registry-1.docker.io
+build	Build Docker image	2026-07-25T05:13:04.0345273Z #3 DONE 0.0s
+build	Build Docker image	2026-07-25T05:13:04.1845891Z 
+build	Build Docker image	2026-07-25T05:13:04.1846448Z #2 [internal] load metadata for docker.io/library/python:3.12-slim
+build	Build Docker image	2026-07-25T05:13:04.5339724Z #2 DONE 0.9s
+build	Build Docker image	2026-07-25T05:13:04.6248140Z 
+build	Build Docker image	2026-07-25T05:13:04.6248968Z #4 [internal] load .dockerignore
+build	Build Docker image	2026-07-25T05:13:04.6250120Z #4 transferring context: 2B done
+build	Build Docker image	2026-07-25T05:13:04.6250962Z #4 DONE 0.0s
+build	Build Docker image	2026-07-25T05:13:04.6251402Z 
+build	Build Docker image	2026-07-25T05:13:04.6251785Z #5 [internal] load build context
+build	Build Docker image	2026-07-25T05:13:04.6252416Z #5 transferring context: 2B done
+build	Build Docker image	2026-07-25T05:13:04.6254751Z #5 DONE 0.0s
+build	Build Docker image	2026-07-25T05:13:04.6255318Z 
+build	Build Docker image	2026-07-25T05:13:04.6255469Z #6 [2/3] WORKDIR /app
+build	Build Docker image	2026-07-25T05:13:04.6255826Z #6 CACHED
+build	Build Docker image	2026-07-25T05:13:04.6256016Z 
+build	Build Docker image	2026-07-25T05:13:04.6256115Z #7 [3/3] COPY hello.py .
+build	Build Docker image	2026-07-25T05:13:04.6256721Z #7 ERROR: failed to calculate checksum of ref dce1e4a9-fc26-4218-aaf0-feee5194c8cb::oihhxzbsdour4lpbxfwno198c: "/hello.py": not found
+build	Build Docker image	2026-07-25T05:13:04.6257333Z 
+build	Build Docker image	2026-07-25T05:13:04.6257912Z #8 [1/3] FROM docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de
+build	Build Docker image	2026-07-25T05:13:04.6259250Z #8 resolve docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de done
+build	Build Docker image	2026-07-25T05:13:04.6260492Z #8 sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de 10.37kB / 10.37kB done
+build	Build Docker image	2026-07-25T05:13:04.6261357Z #8 CANCELED
+build	Build Docker image	2026-07-25T05:13:04.6261540Z ------
+build	Build Docker image	2026-07-25T05:13:04.6261732Z  > [3/3] COPY hello.py .:
+build	Build Docker image	2026-07-25T05:13:04.6261956Z ------
+build	Build Docker image	2026-07-25T05:13:04.6368287Z Dockerfile:5
+build	Build Docker image	2026-07-25T05:13:04.6368784Z --------------------
+build	Build Docker image	2026-07-25T05:13:04.6369275Z    3 |     WORKDIR /app
+build	Build Docker image	2026-07-25T05:13:04.6369745Z    4 |     
+build	Build Docker image	2026-07-25T05:13:04.6370279Z    5 | >>> COPY hello.py .
+build	Build Docker image	2026-07-25T05:13:04.6370761Z    6 |     
+build	Build Docker image	2026-07-25T05:13:04.6371144Z    7 |     CMD ["python", "hello.py"]
+build	Build Docker image	2026-07-25T05:13:04.6371729Z --------------------
+build	Build Docker image	2026-07-25T05:13:04.6373452Z ERROR: failed to build: failed to solve: failed to compute cache key: failed to calculate checksum of ref dce1e4a9-fc26-4218-aaf0-feee5194c8cb::oihhxzbsdour4lpbxfwno198c: "/hello.py": not found
+build	Build Docker image	2026-07-25T05:13:04.6422282Z ##[error]Process completed with exit code 1.
